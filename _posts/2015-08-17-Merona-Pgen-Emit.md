@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Pgen] Emit
+title: (Pgen) Emit
 ---
 
 Emit은 입력받은 문자열 그대로를 패킷 빌드 타임에 다시 출력하는 역할을 합니다,<br>
