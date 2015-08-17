@@ -3,7 +3,7 @@ layout: post
 title: Pgen Emit
 ---
 
-Emit은 입력받은 문자열 그대로를 패킷 빌드 타임에 다시 출력하느 역할을 합니다,<br>
+Emit은 입력받은 문자열 그대로를 패킷 빌드 타임에 다시 출력하는 역할을 합니다,<br>
 이 기능을 이용해서 Merona 서버 에서 추가한 Packet.CustomDescriptor를 Pgen에서 출력하도록 할 수 있습니다.
 <br><br>
 Emit을 적용할 필드 위에 Emit 속성을 작성하고, 첫 번째 인자로 출력할 문자열을 입력합니다.
