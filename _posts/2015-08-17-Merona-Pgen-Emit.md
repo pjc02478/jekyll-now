@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pgen Emit
+title: [Pgen] Emit
 ---
 
 Emit은 입력받은 문자열 그대로를 패킷 빌드 타임에 다시 출력하는 역할을 합니다,<br>
@@ -16,7 +16,7 @@ public class TestPacket {
 }
 ```
 
-패킷이 빌드 될 때 Emit 필드의 내용이 대괄호([]) 사이에 그대로 삽입된 채로 출력됩니다.<br>
+패킷이 빌드 될 때 Emit 필드의 내용이 대괄호[] 사이에 그대로 삽입된 채로 출력됩니다.<br>
 (Emit 필드는 빌드 타겟이 Csharp으로 지정되었을 때만 유효합니다.)
 
 ```c#
