@@ -15,6 +15,8 @@ public class Login {
 }
 ```
 
+Packet.CustomPacketDescriptor 클래스를 상속받아 아래처럼 PostProcess 로직을 구현합니다.<br>
+만약 필드에 대해 선처리를 수행하고 싶다면 OnPreProcess 메소드를 상속받아 구현하면 됩니다.
 ```c#
 public class Sha256 : Packet.CustomPacketDescriptor {
   internal protected override void OnPostProcess(ref object value){
