@@ -14,7 +14,6 @@ public class Login {
   public String password;
 }
 ```
-
 Packet.CustomPacketDescriptor 클래스를 상속받아 아래처럼 PostProcess 로직을 구현합니다.<br>
 만약 필드에 대해 선처리를 수행하고 싶다면 OnPreProcess 메소드를 상속받아 구현하면 됩니다.
 ```c#
@@ -24,7 +23,6 @@ public class Sha256 : Packet.CustomPacketDescriptor {
   }
 }
 ```
-
 이렇게 생성된 Custom Packet Descriptor는 Merona 서버에서만 유효하며,
 Merona.Pgen에서 이 Descriptor를 이용하기 위해서는 Emit을 사용해야 합니다.
 ```c#
