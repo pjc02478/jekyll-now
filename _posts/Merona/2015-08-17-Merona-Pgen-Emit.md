@@ -10,6 +10,7 @@ Emit은 입력받은 문자열 그대로를 패킷 빌드 타임에 다시 출�
 Emit을 적용할 필드 위에 Emit 속성을 작성하고, 첫 번째 인자로 출력할 문자열을 입력합니다.
 
 ```c#
+// Pgen 스키마
 public class TestPacket {
   [C2S]
   [Emit("MyCustomAttribute(123, 456)")]
@@ -21,6 +22,7 @@ public class TestPacket {
 (Emit 필드는 빌드 타겟이 Csharp으로 지정되었을 때만 유효합니다.)
 
 ```c#
+// 빌드된 패킷
 public class TestPacket {
   public class C2S {
     [MyCustomAttribute(123, 456)]
